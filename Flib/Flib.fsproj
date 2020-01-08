@@ -1,0 +1,139 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Assets\Plugins</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\Assets\Plugins</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="GameManager.fs" />
+    <Compile Include="DataComponents\BallTag.fs" />
+    <Compile Include="DataComponents\PaddleInputData.fs" />
+    <Compile Include="DataComponents\PaddleMovementData.fs" />
+    <Compile Include="DataComponents\SpeedIncreaseOverTimeData.fs" />
+    <Compile Include="Systems\BallGoalCheckSystem.fs" />
+    <Compile Include="Systems\IncreaseVelocityOverTimeSystem.fs" />
+    <Compile Include="Systems\PaddleMovementSystem.fs" />
+    <Compile Include="Systems\PlayerInputSystem.fs" />
+    <Content Include="Notes.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Unity.Cecil">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\Unity.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Cecil.Mdb">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\Unity.Cecil.Mdb.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Cecil.Pdb">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\Unity.Cecil.Pdb.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Cecil.Rocks">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\Unity.Cecil.Rocks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.CecilTools">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\Unity.CecilTools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.DataContract">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\Unity.DataContract.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\Library\ScriptAssemblies\Unity.Entities.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Entities.Hybrid">
+      <HintPath>..\Library\ScriptAssemblies\Unity.Entities.Hybrid.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.IvyParser">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\Unity.IvyParser.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Jobs">
+      <HintPath>..\Library\ScriptAssemblies\Unity.Jobs.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Legacy.NRefactory">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\Unity.Legacy.NRefactory.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\Unity.Locator.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Physics">
+      <HintPath>..\Library\ScriptAssemblies\Unity.Physics.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Platforms">
+      <HintPath>..\Library\ScriptAssemblies\Unity.Platforms.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Properties">
+      <HintPath>..\Library\ScriptAssemblies\Unity.Properties.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.SerializationLogic">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\Unity.SerializationLogic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>..\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Transforms">
+      <HintPath>..\Library\ScriptAssemblies\Unity.Transforms.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.UNetWeaver">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\Unity.UNetWeaver.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files\Unity\Hub\Editor\2019.3.0f3\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files\Unity\Hub\Editor\2019.3.0f3\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\..\Program Files\Unity\Hub\Editor\2019.3.0f3\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\..\..\..\..\Program Files\Unity\Hub\Editor\2019.3.0f3\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

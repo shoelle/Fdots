@@ -1,0 +1,16 @@
+C:\Users\hoelle\Documents\GitHub\Rpg\Assets\Plugins\netstandard2.0\Flib.deps.json
+C:\Users\hoelle\Documents\GitHub\Rpg\Assets\Plugins\netstandard2.0\Flib.dll
+C:\Users\hoelle\Documents\GitHub\Rpg\Assets\Plugins\netstandard2.0\Flib.pdb
+C:\Users\hoelle\Documents\GitHub\Rpg\Flib\obj\Debug\netstandard2.0\Flib.fsprojAssemblyReference.cache
+C:\Users\hoelle\Documents\GitHub\Rpg\Flib\obj\Debug\netstandard2.0\Flib.AssemblyInfoInputs.cache
+C:\Users\hoelle\Documents\GitHub\Rpg\Flib\obj\Debug\netstandard2.0\Flib.AssemblyInfo.fs
+C:\Users\hoelle\Documents\GitHub\Rpg\Flib\obj\Debug\netstandard2.0\Flib.dll
+C:\Users\hoelle\Documents\GitHub\Rpg\Flib\obj\Debug\netstandard2.0\Flib.pdb
+C:\Users\hoelle\Documents\GitHub\Fdots\Flib\obj\Debug\netstandard2.0\Flib.fsprojAssemblyReference.cache
+C:\Users\hoelle\Documents\GitHub\Fdots\Flib\obj\Debug\netstandard2.0\Flib.AssemblyInfoInputs.cache
+C:\Users\hoelle\Documents\GitHub\Fdots\Flib\obj\Debug\netstandard2.0\Flib.AssemblyInfo.fs
+C:\Users\hoelle\Documents\GitHub\Fdots\Flib\obj\Debug\netstandard2.0\Flib.dll
+C:\Users\hoelle\Documents\GitHub\Fdots\Flib\obj\Debug\netstandard2.0\Flib.pdb
+C:\Users\hoelle\Documents\GitHub\Fdots\Assets\Plugins\netstandard2.0\Flib.deps.json
+C:\Users\hoelle\Documents\GitHub\Fdots\Assets\Plugins\netstandard2.0\Flib.dll
+C:\Users\hoelle\Documents\GitHub\Fdots\Assets\Plugins\netstandard2.0\Flib.pdb
