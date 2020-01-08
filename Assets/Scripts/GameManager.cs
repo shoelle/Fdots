@@ -29,11 +29,19 @@ public class GameManager : MonoBehaviour
 	WaitForSeconds oneSecond;
 	WaitForSeconds delay;
 
+    public bool use_fsharp_lib = true;
+
 	private void Awake()
 	{
-        var gm = this.gameObject.AddComponent<Flib.GameManager.GameManager>();
-        gm.ballPrefab = this.ballPrefab;
-        /*
+        if (use_fsharp_lib)
+        {
+            var gm = this.gameObject.AddComponent<Flib.GameManager.GameManager>();
+            gm.ballPrefab = this.ballPrefab;
+            gm.mainText = this.mainText;
+            gm.playerTexts = this.playerTexts;
+            gm.AwakeyWakey();
+            return;
+        }
 
 		if (main != null && main != this)
 		{
@@ -52,7 +60,7 @@ public class GameManager : MonoBehaviour
 		oneSecond = new WaitForSeconds(1f);
 		delay = new WaitForSeconds(respawnDelay);
 
-		StartCoroutine(CountdownAndSpawnBall());*/
+		StartCoroutine(CountdownAndSpawnBall());
 	}
 
 	public void PlayerScored(int playerID)

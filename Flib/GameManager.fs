@@ -15,7 +15,7 @@ type GameManager () =
 
     member val oneSecond : YieldInstruction = null with get, set
     member val delay : YieldInstruction = null with get, set
-    static member val main : GameManager = GameManager() with get, set
+    static member val main : GameManager option = None with get, set
 
     member val ballPrefab: GameObject = null with get, set
 
@@ -46,6 +46,7 @@ type GameManager () =
         this.manager.AddComponentData(ball, velocity) |> ignore
         
     
+    // https://stackoverflow.com/questions/19810529/coroutines-in-f
     member this.CountdownAndSpawnBall =
         seq {
             this.mainText.text <- "Get Ready"
@@ -72,14 +73,14 @@ type GameManager () =
 
         this.StartCoroutine(this.CountdownAndSpawnBall)
         
-    member this.Awake() =
+    member this.AwakeyWakey() =
         (*if (main != null && main != this)
         {
             Destroy(gameObject);
             return;
         }*)
 
-        GameManager.main <- this;
+        GameManager.main <- Some this;
         this.playerScores <- [|0; 0|]
 
         this.manager <- World.DefaultGameObjectInjectionWorld.EntityManager

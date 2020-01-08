@@ -24,13 +24,13 @@ type BallGoalCheckSystem () =
             //.ForEach((fun (entity : Entity, trans : inref<Translation>) -> // TODO - uncomment this version for error, what's the right keyword??
             
                 let pos = trans.Value
-                let bound = GameManager.main.xBound
+                let bound = GameManager.main.Value.xBound
 
                 if pos.x >= bound then
-                    GameManager.main.PlayerScored(0) |> ignore
+                    GameManager.main.Value.PlayerScored(0) |> ignore
                     ecb.DestroyEntity(entity)
                 else if pos.x <= -bound then
-                    GameManager.main.PlayerScored(1) |> ignore
+                    GameManager.main.Value.PlayerScored(1) |> ignore
                     ecb.DestroyEntity(entity)
                 
             )).Run()

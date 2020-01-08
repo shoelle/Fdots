@@ -15,7 +15,7 @@ type PaddleMovementSystem () =
     override this.OnUpdate(inputDeps : JobHandle) =
     
         let deltaTime = this.Time.DeltaTime
-        let yBound = GameManager.main.yBound
+        let yBound = GameManager.main.Value.yBound
 
         this.Entities.ForEach((fun (trans: ref<Translation>, data: PaddleMovementData) -> // TODO - inref
         
