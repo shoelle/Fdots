@@ -2,7 +2,7 @@
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Physics;
-
+/*
 [AlwaysSynchronizeSystem]
 public class IncreaseVelocityOverTimeSystem : JobComponentSystem
 {
@@ -22,3 +22,4 @@ public class IncreaseVelocityOverTimeSystem : JobComponentSystem
 		return default;
 	}
 }
+*/

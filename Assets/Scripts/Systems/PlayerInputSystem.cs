@@ -1,7 +1,7 @@
 ﻿using Unity.Entities;
 using Unity.Jobs;
 using UnityEngine;
-
+/*
 [AlwaysSynchronizeSystem]
 public class PlayerInputSystem : JobComponentSystem
 {
@@ -18,3 +18,4 @@ public class PlayerInputSystem : JobComponentSystem
 		return default;
 	}
 }
+*/

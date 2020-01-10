@@ -3,7 +3,7 @@ using Unity.Transforms;
 using Unity.Collections;
 using Unity.Mathematics;
 using Unity.Jobs;
-
+/*
 [AlwaysSynchronizeSystem]
 public class BallGoalCheckSystem : JobComponentSystem
 {
@@ -37,3 +37,5 @@ public class BallGoalCheckSystem : JobComponentSystem
 		return default;
 	}
 }
+
+    */

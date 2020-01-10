@@ -2,7 +2,7 @@
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
-
+/*
 [AlwaysSynchronizeSystem]
 public class PaddleMovementSystem : JobComponentSystem
 {
@@ -18,4 +18,4 @@ public class PaddleMovementSystem : JobComponentSystem
 
 		return default;
 	}
-}
+}*/

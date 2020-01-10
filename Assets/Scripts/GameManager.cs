@@ -33,6 +33,15 @@ public class GameManager : MonoBehaviour
 
 	private void Awake()
 	{
+		if (main != null && main != this)
+		{
+			Destroy(gameObject);
+			return;
+		}
+
+		main = this;
+		playerScores = new int[2];
+        
         if (use_fsharp_lib)
         {
             var gm = this.gameObject.AddComponent<Flib.GameManager.GameManager>();
@@ -42,17 +51,8 @@ public class GameManager : MonoBehaviour
             gm.AwakeyWakey();
             return;
         }
-
-		if (main != null && main != this)
-		{
-			Destroy(gameObject);
-			return;
-		}
-
-		main = this;
-		playerScores = new int[2];
-
-		manager = World.DefaultGameObjectInjectionWorld.EntityManager;
+        /*
+        manager = World.DefaultGameObjectInjectionWorld.EntityManager;
 
 		GameObjectConversionSettings settings = GameObjectConversionSettings.FromWorld(World.DefaultGameObjectInjectionWorld, null);
 		ballEntityPrefab = GameObjectConversionUtility.ConvertGameObjectHierarchy(ballPrefab, settings);
@@ -61,10 +61,12 @@ public class GameManager : MonoBehaviour
 		delay = new WaitForSeconds(respawnDelay);
 
 		StartCoroutine(CountdownAndSpawnBall());
+        */
 	}
-
+    /*
 	public void PlayerScored(int playerID)
 	{
+        Debug.LogError("wtf");
 		playerScores[playerID]++;
 		for (int i = 0; i < playerScores.Length && i < playerTexts.Length; i++)
 			playerTexts[i].text = playerScores[i].ToString();
@@ -106,5 +108,6 @@ public class GameManager : MonoBehaviour
 
 		manager.AddComponentData(ball, velocity);
 	}
+    */
 }
 
